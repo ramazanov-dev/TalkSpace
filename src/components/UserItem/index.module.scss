@@ -1,0 +1,97 @@
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  font-size: 16px;
+  padding: 10px;
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.55), -2px -2px 5px 1px rgba(255, 255, 255, 0.08);
+  transition: 0.3s;
+  cursor: pointer;
+  // animation: userShow 0.3s ease-out forwards;
+
+  &:hover {
+    box-shadow: none;
+    background: rgba(#fff,0.02);
+  }
+
+  &:active {
+    opacity: 0.9;
+  }
+}
+
+@keyframes userShow {
+
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.userSelected {
+  background: var(--accent-bg);
+  box-shadow: none;
+}
+
+.userInfo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.noAvatar {
+  border: 1px solid #2d2d2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 10px;
+}
+
+.username {
+  color: inherit;
+}
+
+.deleteChatBtn {
+  padding: 10px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+  border: none;
+
+  &:hover {
+    // border: 2px solid #fff;
+    box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.25), -1px -1px 5px 0px rgba(255, 255, 255, 0.08);
+
+    svg {
+      fill: #fff;
+    }
+  }
+
+  svg {
+    transition: 0.3s;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    fill: var(--hint-color)
+  }
+}

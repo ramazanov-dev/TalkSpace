@@ -1,0 +1,25 @@
+body{
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+}
+
+::-webkit-scrollbar {
+  width: 5px
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--bg);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--accent-bg);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
