@@ -16,7 +16,6 @@ $ yarn dlx @yarnpkg/sdks vscode
 2. Insert your bot's token into the `BOT_TOKEN` constant within the `config.ts` file.
 
 ```js
-export const API_URL = "https/api.telegram.org/bot"
 export const BOT_TOKEN = "YOUR_TOKEN_HERE"
 ```
 
